@@ -24,7 +24,15 @@
   },
   "scripts": {
     "post-install-cmd" : [
-      "HttpStub\\Installer::postUpdate"
+      "HttpStub\\Installer::postInstall"
+    ],
+    "post-update-cmd" : [
+      "HttpStub\\Installer::postInstall"
     ]
+  },
+  "extra": {
+    "HttpStub": {
+      "data-root": ".data"
+    }
   }
 }
